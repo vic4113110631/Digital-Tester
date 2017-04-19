@@ -1,0 +1,209 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Unit|pll|sd1|pll7|clk[1]'
+Slack : -5.525
+TNS   : -710.844
+
+Type  : Slow 1200mV 85C Model Setup 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : -1.960
+TNS   : -94.896
+
+Type  : Slow 1200mV 85C Model Setup 'n/a'
+Slack : 14.391
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'n/a'
+Slack : 5.133
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 1.150
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 3.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 1.193
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 2.675
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 1.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Unit|pciexpress|altgx_internal|Architectire_PCIExpress_altgx_internal_alt_c3gxb_qmh8_component|transmit_pcs0|hiptxclkout'
+Slack : 2.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Unit|pciexpress|altgx_internal|Architectire_PCIExpress_altgx_internal_alt_c3gxb_qmh8_component|transmit_pma0|clockout'
+Slack : 2.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 3.576
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0'
+Slack : 3.977
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PCIE_REFCLK_P'
+Slack : 4.980
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.891
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Unit|pll|sd1|pll7|clk[1]'
+Slack : -4.878
+TNS   : -505.481
+
+Type  : Slow 1200mV 0C Model Setup 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : -1.839
+TNS   : -26.001
+
+Type  : Slow 1200mV 0C Model Setup 'n/a'
+Slack : 14.869
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'n/a'
+Slack : 4.704
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 1.521
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 3.882
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 1.099
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 2.380
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 1.351
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|altgx_internal|Architectire_PCIExpress_altgx_internal_alt_c3gxb_qmh8_component|transmit_pcs0|hiptxclkout'
+Slack : 2.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|altgx_internal|Architectire_PCIExpress_altgx_internal_alt_c3gxb_qmh8_component|transmit_pma0|clockout'
+Slack : 2.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 3.525
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0'
+Slack : 3.971
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PCIE_REFCLK_P'
+Slack : 4.975
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.911
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Unit|pll|sd1|pll7|clk[1]'
+Slack : -2.520
+TNS   : -75.562
+
+Type  : Fast 1200mV 0C Model Setup 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : -0.377
+TNS   : -0.377
+
+Type  : Fast 1200mV 0C Model Setup 'n/a'
+Slack : 17.128
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 0.073
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'n/a'
+Slack : 2.603
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 2.965
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 5.623
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 1.487
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|altgx_internal|Architectire_PCIExpress_altgx_internal_alt_c3gxb_qmh8_component|transmit_pcs0|hiptxclkout'
+Slack : 2.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|altgx_internal|Architectire_PCIExpress_altgx_internal_alt_c3gxb_qmh8_component|transmit_pma0|clockout'
+Slack : 2.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Unit|pll|sd1|pll7|clk[1]'
+Slack : 2.229
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout'
+Slack : 3.682
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Unit|pciexpress|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0'
+Slack : 3.994
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PCIE_REFCLK_P'
+Slack : 4.989
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.621
+TNS   : 0.000
+
+------------------------------------------------------------

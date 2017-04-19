@@ -1,0 +1,13 @@
+﻿  Moc'ing testprogram.h...
+  Uic'ing testprogram.ui...
+  Rcc'ing testprogram.qrc...
+RCC : warning : No resources in 'D:\TestProgram\TestProgram\testprogram.qrc'.
+  
+  moc_testprogram.cpp
+  main.cpp
+  testprogram.cpp
+  正在產生程式碼...
+d:\testprogram\testprogram\testprogram.cpp(63): warning C4700: 使用了未初始化的區域變數 'bPass'
+  qrc_testprogram.cpp
+  PCIE.c
+  TestProgram.vcxproj -> D:\TestProgram\\Debug\TestProgram.exe

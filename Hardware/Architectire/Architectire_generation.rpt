@@ -1,0 +1,233 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\DigitalTester\Hardware\Architectire.qsys --block-symbol-file --output-directory=D:\DigitalTester\Hardware\Architectire --family="Cyclone IV GX" --part=EP4CGX150DF31C7
+Progress: Loading Hardware/Architectire.qsys
+Progress: Reading input file
+Progress: Adding Clock [clock_source 15.0]
+Progress: Parameterizing module Clock
+Progress: Adding ClockBridge [altera_clock_bridge 15.0]
+Progress: Parameterizing module ClockBridge
+Progress: Adding ControlSignal [altera_avalon_pio 15.0]
+Progress: Parameterizing module ControlSignal
+Progress: Adding DCFIFO [altera_avalon_dc_fifo 15.0]
+Progress: Parameterizing module DCFIFO
+Progress: Adding FIFO_Memory [altera_avalon_fifo 15.0]
+Progress: Parameterizing module FIFO_Memory
+Progress: Adding PCIExpress [altera_pcie_hard_ip 15.0]
+Progress: Parameterizing module PCIExpress
+Progress: Adding PLL [altpll 15.0]
+Progress: Parameterizing module PLL
+Progress: Adding Response [altera_avalon_pio 15.0]
+Progress: Parameterizing module Response
+Progress: Adding SGDMA [altera_avalon_sgdma 15.0]
+Progress: Parameterizing module SGDMA
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Architectire.FIFO_Memory: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: Architectire.PCIExpress:  Rx Master BAR 1_0 mapped to 6 -bit Avalon-MM address
+Info: Architectire.PCIExpress:  Rx Master BAR 2 mapped to 15 -bit Avalon-MM address
+Warning: Architectire.PCIExpress.PCIExpress: Module dependency loop involving: "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 15.0)
+Warning: Architectire.PCIExpress.PCIExpress: Module dependency loop involving: "avalon_clk" (altera_clock_bridge 15.0), "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 15.0)
+Info: Architectire.PCIExpress.pcie_internal_hip:  Txs Address width is 31
+Info: Architectire.PCIExpress.pcie_internal_hip: Application clock frequency is 125 Mhz 
+Warning: Architectire.PCIExpress.pcie_internal_hip.app_msi_ack: Interface has no signals
+Warning: Architectire.PCIExpress.pcie_internal_hip.app_msi_num: Interface has no signals
+Warning: Architectire.PCIExpress.pcie_internal_hip.app_msi_req: Interface has no signals
+Warning: Architectire.PCIExpress.pcie_internal_hip.test_out_export: Interface has no signals
+Info: Architectire.PCIExpress.altgx_internal: Family: Cyclone IV GX
+Info: Architectire.PCIExpress.altgx_internal: Lanes: 1
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.pcie_core_clk cannot be both connected and exported
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.app_msi_ack must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.rc_rx_analogreset must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.rc_rx_digitalreset must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.app_msi_num must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.app_msi_req must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.msi_interface_export must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.tx_deemph_0 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.tx_margin_0 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.test_out_export must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pipe_interface_internal: pipe_interface_internal.pll_powerdown_pcs must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pipe_interface_internal: pipe_interface_internal.rateswitch_pcs must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pipe_interface_internal: pipe_interface_internal.rateswitchbaseclock_pcs must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_2 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_3 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_4 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_5 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_6 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_7 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_8 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_9 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.reset_controller_internal: reset_controller_internal.reset_n_out cannot be both connected and exported
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: The source has a channel signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Warning: Architectire.PLL: PLL.areset_conduit must be exported, or connected to a matching conduit.
+Warning: Architectire.PLL: PLL.locked_conduit must be exported, or connected to a matching conduit.
+Warning: Architectire.PLL: PLL.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress: Interrupt sender PCIExpress.cra_irq is not connected to an interrupt receiver
+Warning: Architectire.PLL: PLL.pll_slave must be connected to an Avalon-MM master
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\DigitalTester\Hardware\Architectire.qsys --synthesis=VERILOG --output-directory=D:\DigitalTester\Hardware\Architectire\synthesis --family="Cyclone IV GX" --part=EP4CGX150DF31C7
+Progress: Loading Hardware/Architectire.qsys
+Progress: Reading input file
+Progress: Adding Clock [clock_source 15.0]
+Progress: Parameterizing module Clock
+Progress: Adding ClockBridge [altera_clock_bridge 15.0]
+Progress: Parameterizing module ClockBridge
+Progress: Adding ControlSignal [altera_avalon_pio 15.0]
+Progress: Parameterizing module ControlSignal
+Progress: Adding DCFIFO [altera_avalon_dc_fifo 15.0]
+Progress: Parameterizing module DCFIFO
+Progress: Adding FIFO_Memory [altera_avalon_fifo 15.0]
+Progress: Parameterizing module FIFO_Memory
+Progress: Adding PCIExpress [altera_pcie_hard_ip 15.0]
+Progress: Parameterizing module PCIExpress
+Progress: Adding PLL [altpll 15.0]
+Progress: Parameterizing module PLL
+Progress: Adding Response [altera_avalon_pio 15.0]
+Progress: Parameterizing module Response
+Progress: Adding SGDMA [altera_avalon_sgdma 15.0]
+Progress: Parameterizing module SGDMA
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Architectire.FIFO_Memory: For Avalon-ST and Avalon-MM combinations, data width is 32 bits.
+Info: Architectire.PCIExpress:  Rx Master BAR 1_0 mapped to 6 -bit Avalon-MM address
+Info: Architectire.PCIExpress:  Rx Master BAR 2 mapped to 15 -bit Avalon-MM address
+Warning: Architectire.PCIExpress.PCIExpress: Module dependency loop involving: "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 15.0)
+Warning: Architectire.PCIExpress.PCIExpress: Module dependency loop involving: "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 15.0), "avalon_clk" (altera_clock_bridge 15.0)
+Info: Architectire.PCIExpress.pcie_internal_hip:  Txs Address width is 31
+Info: Architectire.PCIExpress.pcie_internal_hip: Application clock frequency is 125 Mhz 
+Warning: Architectire.PCIExpress.pcie_internal_hip.app_msi_ack: Interface has no signals
+Warning: Architectire.PCIExpress.pcie_internal_hip.app_msi_num: Interface has no signals
+Warning: Architectire.PCIExpress.pcie_internal_hip.app_msi_req: Interface has no signals
+Warning: Architectire.PCIExpress.pcie_internal_hip.test_out_export: Interface has no signals
+Info: Architectire.PCIExpress.altgx_internal: Family: Cyclone IV GX
+Info: Architectire.PCIExpress.altgx_internal: Lanes: 1
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.pcie_core_clk cannot be both connected and exported
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.app_msi_ack must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.rc_rx_analogreset must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.rc_rx_digitalreset must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.app_msi_num must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.app_msi_req must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.msi_interface_export must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.tx_deemph_0 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.tx_margin_0 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pcie_internal_hip: pcie_internal_hip.test_out_export must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pipe_interface_internal: pipe_interface_internal.pll_powerdown_pcs must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pipe_interface_internal: pipe_interface_internal.rateswitch_pcs must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.pipe_interface_internal: pipe_interface_internal.rateswitchbaseclock_pcs must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_2 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_3 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_4 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_5 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_6 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_7 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_8 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.refclk_conduit: refclk_conduit.conduit_out_9 must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress.reset_controller_internal: reset_controller_internal.reset_n_out cannot be both connected and exported
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: Max channel is 255 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: The source has a channel signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: Architectire.FIFO_Memory.out/DCFIFO.in: The source has a error signal of 8 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Warning: Architectire.PLL: PLL.areset_conduit must be exported, or connected to a matching conduit.
+Warning: Architectire.PLL: PLL.locked_conduit must be exported, or connected to a matching conduit.
+Warning: Architectire.PLL: PLL.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: Architectire.PCIExpress: Interrupt sender PCIExpress.cra_irq is not connected to an interrupt receiver
+Warning: Architectire.PLL: PLL.pll_slave must be connected to an Avalon-MM master
+Info: Architectire: Generating Architectire "Architectire" for QUARTUS_SYNTH
+Info: avalon_st_adapter: Inserting channel_adapter: channel_adapter_0
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: ControlSignal: Starting RTL generation for module 'Architectire_ControlSignal'
+Info: ControlSignal:   Generation command is [exec D:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.0/quartus/bin64/perl/lib -I D:/altera/15.0/quartus/sopc_builder/bin/europa -I D:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.0/quartus/sopc_builder/bin -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Architectire_ControlSignal --dir=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0002_ControlSignal_gen/ --quartus_dir=D:/altera/15.0/quartus --verilog --config=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0002_ControlSignal_gen//Architectire_ControlSignal_component_configuration.pl  --do_build_sim=0  ]
+Info: ControlSignal: Done RTL generation for module 'Architectire_ControlSignal'
+Info: ControlSignal: "Architectire" instantiated altera_avalon_pio "ControlSignal"
+Info: DCFIFO: "Architectire" instantiated altera_avalon_dc_fifo "DCFIFO"
+Info: FIFO_Memory: Starting RTL generation for module 'Architectire_FIFO_Memory'
+Info: FIFO_Memory:   Generation command is [exec D:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.0/quartus/bin64/perl/lib -I D:/altera/15.0/quartus/sopc_builder/bin/europa -I D:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.0/quartus/sopc_builder/bin -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=Architectire_FIFO_Memory --dir=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0003_FIFO_Memory_gen/ --quartus_dir=D:/altera/15.0/quartus --verilog --config=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0003_FIFO_Memory_gen//Architectire_FIFO_Memory_component_configuration.pl  --do_build_sim=0  ]
+Info: FIFO_Memory: Done RTL generation for module 'Architectire_FIFO_Memory'
+Info: FIFO_Memory: "Architectire" instantiated altera_avalon_fifo "FIFO_Memory"
+Info: PCIExpress: "Architectire" instantiated altera_pcie_hard_ip "PCIExpress"
+Info: PLL: "Architectire" instantiated altpll "PLL"
+Info: Response: Starting RTL generation for module 'Architectire_Response'
+Info: Response:   Generation command is [exec D:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.0/quartus/bin64/perl/lib -I D:/altera/15.0/quartus/sopc_builder/bin/europa -I D:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.0/quartus/sopc_builder/bin -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Architectire_Response --dir=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0006_Response_gen/ --quartus_dir=D:/altera/15.0/quartus --verilog --config=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0006_Response_gen//Architectire_Response_component_configuration.pl  --do_build_sim=0  ]
+Info: Response: Done RTL generation for module 'Architectire_Response'
+Info: Response: "Architectire" instantiated altera_avalon_pio "Response"
+Info: SGDMA: Starting RTL generation for module 'Architectire_SGDMA'
+Info: SGDMA:   Generation command is [exec D:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.0/quartus/bin64/perl/lib -I D:/altera/15.0/quartus/sopc_builder/bin/europa -I D:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.0/quartus/sopc_builder/bin -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- D:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=Architectire_SGDMA --dir=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0007_SGDMA_gen/ --quartus_dir=D:/altera/15.0/quartus --verilog --config=C:/Users/VICTOR~1/AppData/Local/Temp/alt7273_1863800730827864572.dir/0007_SGDMA_gen//Architectire_SGDMA_component_configuration.pl  --do_build_sim=0  ]
+Info: SGDMA: Done RTL generation for module 'Architectire_SGDMA'
+Info: SGDMA: "Architectire" instantiated altera_avalon_sgdma "SGDMA"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Architectire" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "Architectire" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_2: "Architectire" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: irq_mapper: "Architectire" instantiated altera_irq_mapper "irq_mapper"
+Info: avalon_st_adapter: "Architectire" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: rst_controller: "Architectire" instantiated altera_reset_controller "rst_controller"
+Info: pcie_internal_hip: "PCIExpress" instantiated altera_pcie_internal_hard_ip_qsys "pcie_internal_hip"
+Info: altgx_internal: Family: Cyclone IV GX
+Info: altgx_internal: Subprotocol: Gen 1-x1
+Info: altgx_internal: qmegawiz -silent module=alt_c3gxb LOCKDOWN_EXCL=PCIE IP_MODE=PCIE_HIP_8 gxb_analog_power=AUTO tx_analog_power=AUTO elec_idle_infer_enable=false tx_allow_polarity_inversion=false rx_cdrctrl_enable=true hip_tx_clkout rx_elecidleinfersel fixedclk enable_0ppm=false pll_powerdown intended_device_family=cycloneiv starting_channel_number=84   deviceFamily="Cyclone IV GX"  wiz_subprotocol="Gen 1-x1"  OPTIONAL_FILES=NONE Architectire_PCIExpress_altgx_internal.v
+Info: altgx_internal: "PCIExpress" instantiated altera_pcie_internal_altgx "altgx_internal"
+Info: reset_controller_internal: "PCIExpress" instantiated altera_pcie_internal_reset_controller_qsys "reset_controller_internal"
+Info: pipe_interface_internal: "PCIExpress" instantiated altera_pcie_internal_pipe_interface_qsys "pipe_interface_internal"
+Info: PCIExpress_bar1_0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "PCIExpress_bar1_0_translator"
+Info: FIFO_Memory_in_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "FIFO_Memory_in_translator"
+Info: PCIExpress_bar1_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "PCIExpress_bar1_0_agent"
+Info: FIFO_Memory_in_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "FIFO_Memory_in_agent"
+Info: FIFO_Memory_in_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "FIFO_Memory_in_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: PCIExpress_bar1_0_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "PCIExpress_bar1_0_limiter"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: FIFO_Memory_in_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "FIFO_Memory_in_burst_adapter"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: PCIExpress_bar1_0_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "PCIExpress_bar1_0_cmd_width_adapter"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: router_003: "mm_interconnect_2" instantiated altera_merlin_router "router_003"
+Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/DigitalTester/Hardware/Architectire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_2" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: channel_adapter_0: "avalon_st_adapter" instantiated channel_adapter "channel_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Architectire: Done "Architectire" with 53 modules, 96 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

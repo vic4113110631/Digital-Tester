@@ -1,0 +1,46 @@
+	Architectire u0 (
+		.clk_clk                                       (<connected-to-clk_clk>),                                       //                           clk.clk
+		.clockbridge_out_clk                           (<connected-to-clockbridge_out_clk>),                           //               clockbridge_out.clk
+		.controlsignal_export                          (<connected-to-controlsignal_export>),                          //                 controlsignal.export
+		.dcfifo_csr_address                            (<connected-to-dcfifo_csr_address>),                            //                    dcfifo_csr.address
+		.dcfifo_csr_read                               (<connected-to-dcfifo_csr_read>),                               //                              .read
+		.dcfifo_csr_write                              (<connected-to-dcfifo_csr_write>),                              //                              .write
+		.dcfifo_csr_readdata                           (<connected-to-dcfifo_csr_readdata>),                           //                              .readdata
+		.dcfifo_csr_writedata                          (<connected-to-dcfifo_csr_writedata>),                          //                              .writedata
+		.dcfifo_out_data                               (<connected-to-dcfifo_out_data>),                               //                    dcfifo_out.data
+		.dcfifo_out_valid                              (<connected-to-dcfifo_out_valid>),                              //                              .valid
+		.dcfifo_out_ready                              (<connected-to-dcfifo_out_ready>),                              //                              .ready
+		.dcfifo_out_startofpacket                      (<connected-to-dcfifo_out_startofpacket>),                      //                              .startofpacket
+		.dcfifo_out_endofpacket                        (<connected-to-dcfifo_out_endofpacket>),                        //                              .endofpacket
+		.pciexpress_clocks_sim_clk250_export           (<connected-to-pciexpress_clocks_sim_clk250_export>),           //         pciexpress_clocks_sim.clk250_export
+		.pciexpress_clocks_sim_clk500_export           (<connected-to-pciexpress_clocks_sim_clk500_export>),           //                              .clk500_export
+		.pciexpress_clocks_sim_clk125_export           (<connected-to-pciexpress_clocks_sim_clk125_export>),           //                              .clk125_export
+		.pciexpress_pipe_ext_pipe_mode                 (<connected-to-pciexpress_pipe_ext_pipe_mode>),                 //           pciexpress_pipe_ext.pipe_mode
+		.pciexpress_pipe_ext_phystatus_ext             (<connected-to-pciexpress_pipe_ext_phystatus_ext>),             //                              .phystatus_ext
+		.pciexpress_pipe_ext_rate_ext                  (<connected-to-pciexpress_pipe_ext_rate_ext>),                  //                              .rate_ext
+		.pciexpress_pipe_ext_powerdown_ext             (<connected-to-pciexpress_pipe_ext_powerdown_ext>),             //                              .powerdown_ext
+		.pciexpress_pipe_ext_txdetectrx_ext            (<connected-to-pciexpress_pipe_ext_txdetectrx_ext>),            //                              .txdetectrx_ext
+		.pciexpress_pipe_ext_rxelecidle0_ext           (<connected-to-pciexpress_pipe_ext_rxelecidle0_ext>),           //                              .rxelecidle0_ext
+		.pciexpress_pipe_ext_rxdata0_ext               (<connected-to-pciexpress_pipe_ext_rxdata0_ext>),               //                              .rxdata0_ext
+		.pciexpress_pipe_ext_rxstatus0_ext             (<connected-to-pciexpress_pipe_ext_rxstatus0_ext>),             //                              .rxstatus0_ext
+		.pciexpress_pipe_ext_rxvalid0_ext              (<connected-to-pciexpress_pipe_ext_rxvalid0_ext>),              //                              .rxvalid0_ext
+		.pciexpress_pipe_ext_rxdatak0_ext              (<connected-to-pciexpress_pipe_ext_rxdatak0_ext>),              //                              .rxdatak0_ext
+		.pciexpress_pipe_ext_txdata0_ext               (<connected-to-pciexpress_pipe_ext_txdata0_ext>),               //                              .txdata0_ext
+		.pciexpress_pipe_ext_txdatak0_ext              (<connected-to-pciexpress_pipe_ext_txdatak0_ext>),              //                              .txdatak0_ext
+		.pciexpress_pipe_ext_rxpolarity0_ext           (<connected-to-pciexpress_pipe_ext_rxpolarity0_ext>),           //                              .rxpolarity0_ext
+		.pciexpress_pipe_ext_txcompl0_ext              (<connected-to-pciexpress_pipe_ext_txcompl0_ext>),              //                              .txcompl0_ext
+		.pciexpress_pipe_ext_txelecidle0_ext           (<connected-to-pciexpress_pipe_ext_txelecidle0_ext>),           //                              .txelecidle0_ext
+		.pciexpress_powerdown_pll_powerdown            (<connected-to-pciexpress_powerdown_pll_powerdown>),            //          pciexpress_powerdown.pll_powerdown
+		.pciexpress_powerdown_gxb_powerdown            (<connected-to-pciexpress_powerdown_gxb_powerdown>),            //                              .gxb_powerdown
+		.pciexpress_reconfig_busy_busy_altgxb_reconfig (<connected-to-pciexpress_reconfig_busy_busy_altgxb_reconfig>), //      pciexpress_reconfig_busy.busy_altgxb_reconfig
+		.pciexpress_reconfig_fromgxb_0_data            (<connected-to-pciexpress_reconfig_fromgxb_0_data>),            // pciexpress_reconfig_fromgxb_0.data
+		.pciexpress_reconfig_togxb_data                (<connected-to-pciexpress_reconfig_togxb_data>),                //     pciexpress_reconfig_togxb.data
+		.pciexpress_refclk_export                      (<connected-to-pciexpress_refclk_export>),                      //             pciexpress_refclk.export
+		.pciexpress_rstn_export                        (<connected-to-pciexpress_rstn_export>),                        //               pciexpress_rstn.export
+		.pciexpress_rx_in_rx_datain_0                  (<connected-to-pciexpress_rx_in_rx_datain_0>),                  //              pciexpress_rx_in.rx_datain_0
+		.pciexpress_test_in_test_in                    (<connected-to-pciexpress_test_in_test_in>),                    //            pciexpress_test_in.test_in
+		.pciexpress_tx_out_tx_dataout_0                (<connected-to-pciexpress_tx_out_tx_dataout_0>),                //             pciexpress_tx_out.tx_dataout_0
+		.reset_reset_n                                 (<connected-to-reset_reset_n>),                                 //                         reset.reset_n
+		.response_export                               (<connected-to-response_export>)                                //                      response.export
+	);
+

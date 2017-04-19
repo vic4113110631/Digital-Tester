@@ -1,0 +1,52 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Architectire.Response -pg 1 -lvl 3 -y 430
+preplace inst Architectire.PCIExpress.avalon_reset -pg 1
+preplace inst Architectire.PCIExpress.avalon_clk -pg 1
+preplace inst Architectire.ControlSignal -pg 1 -lvl 3 -y 30
+preplace inst Architectire.PCIExpress.cal_blk_clk -pg 1
+preplace inst Architectire -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Architectire.PCIExpress.refclk_conduit -pg 1
+preplace inst Architectire.PCIExpress.altgx_internal -pg 1
+preplace inst Architectire.PCIExpress.pcie_rstn_conduit -pg 1
+preplace inst Architectire.PCIExpress.pipe_interface_internal -pg 1
+preplace inst Architectire.PCIExpress.pcie_internal_hip -pg 1
+preplace inst Architectire.ClockBridge -pg 1 -lvl 4 -y 290
+preplace inst Architectire.PCIExpress.reset_controller_internal -pg 1
+preplace inst Architectire.PLL -pg 1 -lvl 3 -y 270
+preplace inst Architectire.PCIExpress -pg 1 -lvl 2 -y 520
+preplace inst Architectire.SGDMA -pg 1 -lvl 1 -y 250
+preplace inst Architectire.PCIExpress.test_in_conduit -pg 1
+preplace inst Architectire.DCFIFO -pg 1 -lvl 4 -y 150
+preplace inst Architectire.FIFO_Memory -pg 1 -lvl 3 -y 130
+preplace inst Architectire.Clock -pg 1 -lvl 2 -y 290
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.response,(SLAVE)Response.external_connection) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_test_in,(SLAVE)PCIExpress.test_in) 1 0 2 NJ 810 NJ
+preplace netloc POINT_TO_POINT<net_container>Architectire</net_container>(MASTER)PCIExpress.rxm_irq,(SLAVE)SGDMA.csr_irq) 1 0 3 260 420 NJ 400 940
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_reconfig_fromgxb_0,(SLAVE)PCIExpress.reconfig_fromgxb_0) 1 0 2 NJ 710 NJ
+preplace netloc FAN_OUT<net_container>Architectire</net_container>(SLAVE)ClockBridge.in_clk,(SLAVE)DCFIFO.out_clk,(MASTER)PLL.c1) 1 3 1 1300
+preplace netloc POINT_TO_POINT<net_container>Architectire</net_container>(MASTER)Clock.clk,(SLAVE)PLL.inclk_interface) 1 2 1 N
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_refclk,(SLAVE)PCIExpress.refclk) 1 0 2 NJ 770 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.reset,(SLAVE)Clock.clk_in_reset) 1 0 2 NJ 360 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_rstn,(SLAVE)PCIExpress.pcie_rstn) 1 0 2 NJ 630 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)PCIExpress.pipe_ext,(SLAVE)Architectire.pciexpress_pipe_ext) 1 0 2 NJ 650 NJ
+preplace netloc FAN_IN<net_container>Architectire</net_container>(MASTER)SGDMA.descriptor_read,(MASTER)SGDMA.descriptor_write,(MASTER)SGDMA.m_read,(SLAVE)PCIExpress.txs) 1 1 1 590
+preplace netloc EXPORT<net_container>Architectire</net_container>(MASTER)Architectire.clockbridge_out,(MASTER)ClockBridge.out_clk) 1 4 1 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_reconfig_busy,(SLAVE)PCIExpress.reconfig_busy) 1 0 2 NJ 690 NJ
+preplace netloc POINT_TO_POINT<net_container>Architectire</net_container>(SLAVE)DCFIFO.in,(MASTER)FIFO_Memory.out) 1 3 1 N
+preplace netloc INTERCONNECT<net_container>Architectire</net_container>(SLAVE)FIFO_Memory.in,(SLAVE)Response.s1,(MASTER)SGDMA.m_write,(MASTER)PCIExpress.bar1_0,(SLAVE)ControlSignal.s1) 1 1 2 NJ 380 1020
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_reconfig_togxb,(SLAVE)PCIExpress.reconfig_togxb) 1 0 2 NJ 750 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_powerdown,(SLAVE)PCIExpress.powerdown) 1 0 2 NJ 670 NJ
+preplace netloc FAN_OUT<net_container>Architectire</net_container>(MASTER)PLL.c0,(SLAVE)PCIExpress.reconfig_gxbclk,(SLAVE)PCIExpress.cal_blk_clk) 1 1 3 610 360 NJ 420 1260
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_clocks_sim,(SLAVE)PCIExpress.clocks_sim) 1 0 2 NJ 550 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.clk,(SLAVE)Clock.clk_in) 1 0 2 NJ 240 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.dcfifo_csr,(SLAVE)DCFIFO.out_csr) 1 0 4 NJ 220 NJ 220 NJ 220 NJ
+preplace netloc INTERCONNECT<net_container>Architectire</net_container>(SLAVE)ControlSignal.reset,(SLAVE)SGDMA.reset,(SLAVE)PLL.inclk_interface_reset,(SLAVE)DCFIFO.out_clk_reset,(SLAVE)FIFO_Memory.reset_in,(SLAVE)Response.reset,(SLAVE)DCFIFO.in_clk_reset,(MASTER)Clock.clk_reset,(MASTER)PCIExpress.pcie_core_reset) 1 0 4 280 440 NJ 420 980 260 1260
+preplace netloc FAN_OUT<net_container>Architectire</net_container>(MASTER)PCIExpress.bar2,(SLAVE)SGDMA.csr,(SLAVE)PCIExpress.cra) 1 0 3 240 400 470 480 920
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)ControlSignal.external_connection,(SLAVE)Architectire.controlsignal) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>Architectire</net_container>(SLAVE)DCFIFO.in_clk,(SLAVE)Response.clk,(SLAVE)FIFO_Memory.clk_in,(SLAVE)PCIExpress.fixedclk,(MASTER)PCIExpress.pcie_core_clk,(SLAVE)SGDMA.clk,(SLAVE)ControlSignal.clk) 1 0 4 220 380 530 440 960 240 1240
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)Architectire.pciexpress_tx_out,(SLAVE)PCIExpress.tx_out) 1 0 2 NJ 830 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(SLAVE)PCIExpress.rx_in,(SLAVE)Architectire.pciexpress_rx_in) 1 0 2 NJ 790 NJ
+preplace netloc EXPORT<net_container>Architectire</net_container>(MASTER)DCFIFO.out,(MASTER)Architectire.dcfifo_out) 1 4 1 NJ
+levelinfo -pg 1 0 190 1600
+levelinfo -hier Architectire 200 310 740 1050 1330 1470

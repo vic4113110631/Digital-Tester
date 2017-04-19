@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/TestProgram">
+        <file>Resources/Icon/AVC File.png</file>
+        <file>Resources/Icon/Exit.png</file>
+        <file>Resources/Icon/File.png</file>
+        <file>Resources/Icon/Generate.png</file>
+        <file>Resources/Icon/Github.png</file>
+        <file>Resources/Icon/Science.png</file>
+        <file>Resources/Icon/Status.png</file>
+        <file>Resources/Icon/Chip.png</file>
+    </qresource>
+</RCC>
